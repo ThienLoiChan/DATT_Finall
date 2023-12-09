@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân loại sản phẩm</title>
+    <style>
+        /* Thêm CSS để làm đẹp giao diện (Tùy chỉnh theo ý muốn) */
+        .product-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-item {
+            margin-bottom: 10px;
+        }
+
+        .category-button {
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phân loại sản phẩm</h1>
+
+    <div>
+        <button class="category-button" onclick="filterProducts('Rau')">Rau</button>
+        <button class="category-button" onclick="filterProducts('Củ')">Củ</button>
+        <button class="category-button" onclick="filterProducts('Quả')">Quả</button>
+        <button class="category-button" onclick="showAllProducts()">Hiển thị tất cả</button>
+    </div>
+
+    <ul id="productList" class="product-list">
+        <!-- Danh sách sản phẩm sẽ được hiển thị ở đây -->
+    </ul>
+
+    <script>
+        // Dữ liệu sản phẩm (tên và loại)
+        const products = [
+            { name: 'Cà Chua', category: 'Rau' },
+            { name: 'Khoai Lang', category: 'Củ' },
+            { name: 'Dưa Hấu', category: 'Quả' },
+            // Thêm các sản phẩm khác tương tự
+        ];
+
+        // Hiển thị tất cả sản phẩm khi trang được tải
+        showAllProducts();
+
+        // Hàm để hiển thị sản phẩm theo loại
+        function filterProducts(category) {
+            const productList = document.getElementById('productList');
+            productList.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
+
+            // Lọc và hiển thị sản phẩm thuộc loại được chọn
+            products.filter(product => product.category === category)
+                    .forEach(product => {
+                        const listItem = document.createElement('li');
+                        listItem.className = 'product-item';
+                        listItem.textContent = product.name;
+                        productList.appendChild(listItem);
+                    });
+        }
+
+        // Hàm để hiển thị tất cả sản phẩm
+        function showAllProducts() {
+            const productList = document.getElementById('productList');
+            productList.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
+
+            // Hiển thị tất cả sản phẩm 
+            products.forEach(product => {
+                const listItem = document.createElement('li');
+                listItem.className = 'product-item';
+                listItem.textContent = product.name;
+                productList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>
