@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Colo Shop Categories</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Colo Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/styles/bootstrap4/bootstrap.min.css}">
+    <link th:href="@{/customer/plugins/font-awesome-4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/plugins/OwlCarousel2-2.2.1/owl.carousel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/plugins/OwlCarousel2-2.2.1/owl.theme.default.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/plugins/OwlCarousel2-2.2.1/animate.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/plugins/jquery-ui-1.12.1.custom/jquery-ui.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/styles/categories_styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/customer/styles/categories_responsive.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body ng-app="MyApp" ng-controller="MyCtrl">
+
+<div class="super_container" id="page-wrapper">
+
+    <!-- Header -->
+
+    <header class="header trans_300">
+
+        <!-- Top Navigation -->
+
+        <div class="top_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top_nav_left">Miễn phí ship cho đơn hàng từ 200k</div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <span class="lienHe">Liên hệ hotline 0909909999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+
+        <div class="main_nav_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div class="logo_container">
+                            <a href="#">OGANI<span>FRUIT</span></a>
+                        </div>
+                        <nav class="navbar">
+                            <ul class="navbar_menu">
+                                <li><a href="/index">TRANG CHỦ</a></li>
+                                <li><a href="/index">MUA SẮM</a></li>
+                                <li><a href="/index">LIÊN HỆ</a></li>
+                            </ul>
+                            <ul class="navbar_user">
+
+                                <li>
+                                    <a>
+                                        <div class="dropdown">
+                                            <a class="userLogin" data-toggle="dropdown">
+                                                <i ng-if="!login" class="fa fa-user" aria-hidden="true">Tài
+                                                    khoản</i>
+                                                <i ng-if="login" class="fa fa-user" aria-hidden="true"> Xin chào,
+                                                    {{username}}</i>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a ng-if="!login" class="dropdown-item itemUser" href="/login">Đăng nhập</a>
+                                                <a ng-if="!login" class="dropdown-item itemUser" href="/register">Đăng ký</a>
+                                                <a ng-if="login" class="dropdown-item itemUser" href="/change-information">Chỉnh sửa</a>
+                                                <a ng-if="login" class="dropdown-item itemUser" href="/change-password">Đổi mật khẩu</a>
+                                                <a ng-if="login" class="dropdown-item itemUser" href="/my-order">Đơn hàng</a>
+                                                <a ng-if="login" class="dropdown-item itemUser" ng-click="logout()" href="#">Đăng xuất</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li ng-if="login" class="checkout">
+                                    <a class="shoppingCart" href="/shopping-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span id="checkout_items" class="checkout_items">{{soLuongGioHang}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="hamburger_container">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="fs_menu_overlay"></div>
+
+    <!-- Hamburger Menu -->
+
+    <div class="hamburger_menu">
+        <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="hamburger_menu_content text-right">
+            <ul class="menu_top_nav">
+                <li class="menu_item has-children">
+                    <a href="#">
+                        usd
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="menu_selection">
+                        <li><a href="#">cad</a></li>
+                        <li><a href="#">aud</a></li>
+                        <li><a href="#">eur</a></li>
+                        <li><a href="#">gbp</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item has-children">
+                    <a href="#">
+                        English
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="menu_selection">
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Italian</a></li>
+                        <li><a href="#">German</a></li>
+                        <li><a href="#">Spanish</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item has-children">
+                    <a href="#">
+                        My Account
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="menu_selection">
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="#">home</a></li>
+                <li class="menu_item"><a href="#">shop</a></li>
+                <li class="menu_item"><a href="#">promotion</a></li>
+                <li class="menu_item"><a href="#">pages</a></li>
+                <li class="menu_item"><a href="#">blog</a></li>
+                <li class="menu_item"><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container product_section_container">
+        <div class="row">
+            <div class="col product_section clearfix">
+
+                <!-- Breadcrumbs -->
+
+                <div class="breadcrumbs d-flex flex-row align-items-center">
+                    <ul>
+                        <li><a href="/index">Trang chủ</a></li>
+                        <li class="active"><a href="/index"><i class="fa fa-angle-right"
+                                                               aria-hidden="true"></i>Mua sắm</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sidebar -->
+
+                <div class="sidebar">
+                    <div class="sidebar_section">
+                        <div class="sidebar_title">
+                        
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+
+                <div class="main_content">
+
+                    <!-- Products -->
+
+                    <div class="products_iso">
+                        <div class="row">
+                            <div class="col">
+
+                                <!-- Product Sorting -->
+
+                                <div class="product_sorting_container product_sorting_container_top">
+                                    <ul class="product_sorting">
+                                        <li>
+                                            <span class="type_sorting_text">Hiển thị</span>
+                                            <span class="num_sorting_text">{{limit}}</span>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="sorting_num">
+                                                <li ng-click="setLimit(8)" class="num_sorting_btn"><span>8</span></li>
+                                                <li ng-click="setLimit(12)" class="num_sorting_btn"><span>12</span></li>
+                                                <li ng-click="setLimit(16)" class="num_sorting_btn"><span>16</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="pages d-flex flex-row align-items-center">
+                                        
+                                       
+                                      
+                                    </div>
+
+                                </div>
+
+                                <!-- Product Grid -->
+                                <section class="items">
+                                    <div class="row">
+                                        <div class="col-3 productItem" ng-repeat="Qua in listQua|limitTo:limit:(pageNumber-1)*limit">
+                                            <!-- <div class="col-3 productItem" ng-repeat="Qua in listQua"> -->
+                                            <div class="discount product_filter">
+                                                <div class="product_image" ng-click="detail(Qua)">
+                                                    <img class="shoes_img" name="txtHinhAnh" ng-src="{{srcImage}}/{{Qua.hinhAnh}}">
+                                                </div>
+                                                <div class="favorite favorite_left"></div>
+                                                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                                    <span>-{{Qua.giamGia*100}}%</span>
+                                                </div>
+                                                
+                                                <div class="product_info">
+                                                    <h6 ng-click="detail(Qua)" class="product_name">
+                                                        {{Qua.tenQua}}
+                                                    </h6>
+                                                    <div class="product_price">
+                                                        {{Qua.donGia - Qua.donGia * Qua.giamGia |currency : "" : 0 }} VNĐ/KG
+                                                        <span>{{Qua.donGia |currency : "" : 0}} VNĐ/KG</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div ng-click="addToCart(Qua)" class="addToCart">Thêm vào giỏ hàng
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+
+                                <!-- Product Sorting -->
+
+                                <div class="product_sorting_container product_sorting_container_bottom clearfix">
+
+
+                                    <div class="pages d-flex flex-row align-items-center">
+                                    <div style="margin-right: 10px;" id="next_page_1" class="page_next"><i ng-click="prev()" class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
+                                     
+                                     
+                                        <div class="page_current">
+                                       
+                                        
+                                            <span>{{pageNumber}}</span>
+                                        </div>
+                                        <div class="page_total"><span>/</span> {{totalPage}}</div>
+                                        <div id="next_page_1" class="page_next"><i ng-click="next()" class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefit -->
+
+    <div class="benefit">
+        <div class="container">
+            <div class="row benefit_row">
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row align-items-center">
+                        <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                        <div class="benefit_content">
+                            <h6>Miễn phí vận chuyển</h6>
+                            <p>Miễn phí vận chuyển cho đơn hàng từ 200,000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row align-items-center">
+                        <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                        <div class="benefit_content">
+                            <h6>Thanh toán linh hoạt</h6>
+                            <p>Thanh toán sau khi nhận hàng hoặc thanh toán qua thẻ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row align-items-center">
+                        <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                        <div class="benefit_content">
+                            <h6>45 ngày đổi trả</h6>
+                            <p>Miễn phí đổi trả cho đơn hàng dưới 45 ngày</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row align-items-center">
+                        <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                        <div class="benefit_content">
+                            <h6>Mở cả tuần</h6>
+                            <p>8h - 21h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                        <h4>Bảng tin</h4>
+                        <p>Đăng ký nhận bảng tin để được nhận ưu đãi 20% khi mua hàng lần đầu</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+                            <input id="newsletter_email" type="email" placeholder="Địa chỉ email của bạn" required="required" data-error="Valid email is required.">
+                            <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+                        <ul class="footer_nav">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="/contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_nav_container">
+                        <div class="cr">©2023 All Rights Reserverd. Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Me</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script th:src="@{/customer/js/jquery-3.2.1.min.js}"></script>
+<script th:src="@{/customer/js/jquery-ui-1.13.1/jquery-ui.min.js}"></script>
+<script th:src="@{/customer/assets/js/flyto.js}"></script>
+<script th:src="@{/customer/styles/bootstrap4/popper.js}"></script>
+<script th:src="@{/customer/styles/bootstrap4/bootstrap.min.js}"></script>
+<script th:src="@{/customer/plugins/Isotope/isotope.pkgd.min.js}"></script>
+<script th:src="@{/customer/plugins/OwlCarousel2-2.2.1/owl.carousel.js}"></script>
+<script th:src="@{/customer/plugins/easing/easing.js}"></script>
+<script th:src="@{/customer/js/categories_custom.js}"></script>
+<script>
+        $('.items').flyto({
+            item: '.shoes_img', // item cần bay đến giỏ hàng
+            target: '.checkout', // giỏ hàng
+            button: '.addToCart' // button thêm vào giỏ hàng
+        });
+</script>
+<!-- AngularJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script th:src="@{/customer/js/categories_api.js}"></script>
+</body>
+
+</html>

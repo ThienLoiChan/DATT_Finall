@@ -1,0 +1,230 @@
+{
+    "Giay": [{
+            "TenGiay": "Giày Nike Air Force 1 Low GS Year of the Tiger DQ4502-171",
+            "DonGia": 520,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp1_1.png", "sp1_2.png", "sp1_3.png", "sp1_4.png", "sp1_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày nữ Nike Air Max 90 SE GS ‘Worldwide Pack – SEFA20’ CV7665-001",
+            "DonGia": 320,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp2_1.png", "sp2_2.jpg", "sp2_3.jpg", "sp2_4.jpg", "sp2_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Nike Air Jordan 1 Mid ‘Cream Grey’ DN4281-100',5590000,0.1",
+            "DonGia": 410,
+            "KhuyenMai": 5,
+            "HinhAnh": ["sp3_1.png", "sp3_2.png", "sp3_3.png", "sp3_4.png", "sp3_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Adidas Ultraboost 21 ‘Blue Oxide’ FY3084",
+            "DonGia": 340,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp4_1.png", "sp4_2.png", "sp4_3.png", "sp4_4.png", "sp4_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Adidas"
+        },
+        {
+            "TenGiay": "Giày Adidas Originals 4D Fusio ‘Black Orange Pink’ FZ2414",
+            "DonGia": 600,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp5_1.png", "sp5_2.png", "sp5_3.png", "sp5_4.png", "sp5_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Adidas"
+        },
+        {
+            "TenGiay": "Giày Adidas UltraBoost 21 ‘White Glow Pink’ FY0396",
+            "DonGia": 245,
+            "KhuyenMai": 5,
+            "HinhAnh": ["sp6_1.png", "sp6_2.jpg", "sp6_3.jpg", "sp6_4.jpg", "sp6_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Adidas"
+        },
+        {
+            "TenGiay": "Giày Adidas NMD R1 V2 Brilliant ‘Basics White’ GV7557",
+            "DonGia": 190,
+            "KhuyenMai": 15,
+            "HinhAnh": ["sp7_1.png", "sp7_2.png", "sp7_3.png", "sp7_4.png", "sp7_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Adidas"
+        },
+        {
+            "TenGiay": "Giày Vans Authentic Mule ‘Red’ VN0A54F7JV61",
+            "DonGia": 250,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp8_1.png", "sp8_2.png", "sp8_3.png", "sp8_4.png", "sp8_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Vans"
+        },
+        {
+            "TenGiay": "Giày nữ Vans Comfycush Era ‘Strawberry Pink’ VN0A3WM9VNJ1",
+            "DonGia": 700,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp9_1.jpg", "sp9_2.jpg", "sp9_3.jpg", "sp9_4.jpg", "sp9_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Vans"
+        },
+        {
+            "TenGiay": "Giày nam Vans Old Skool ‘White Flame’ VN0A4U3B2231",
+            "DonGia": 782,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp10_1.png", "sp10_2.png", "sp10_3.png", "sp10_4.png", "sp10_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Vans"
+        },
+        {
+            "TenGiay": "Giày nữ Vans Slip-On ComfyCush ‘Checkerboard’ VN0A3WMDVO4",
+            "DonGia": 666,
+            "KhuyenMai": 30,
+            "HinhAnh": ["sp11_1.jpg", "sp11_2.jpg", "sp11_3.jpg", "sp11_4.jpg", "sp11_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Vans"
+        },
+        {
+            "TenGiay": "Giày Converse Natasha Cloud x Run Star Hike Inspired ‘Floral – Pink Quartz’ 571877C",
+            "DonGia": 160,
+            "KhuyenMai": 5,
+            "HinhAnh": ["sp12_1.png", "sp12_2.png", "sp12_3.png", "sp12_4.png", "sp12_5.png"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày Converse Chuck Taylor All Star Sunflower 670701C",
+            "DonGia": 400,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp13_1.png", "sp13_2.png", "sp13_3.png", "sp13_4.png", "sp13_5.png"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày Converse UNT1TL3D ‘Red-Grey-White’ 168636C",
+            "DonGia": 500,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp14_1.png", "sp14_2.png", "sp14_3.png", "sp14_4.png", "sp14_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày Converse Pro Leather High ‘Breaking Down Barries’ 170493C",
+            "DonGia": 200,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp15_1.png", "sp15_2.png", "sp15_3.png", "sp15_4.png", "sp15_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày Converse Chuck Taylor All Star High Top ‘Traveler’ 170851C",
+            "DonGia": 520,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp16_1.png", "sp16_2.png", "sp16_3.png", "sp16_4.png", "sp16_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày nam Converse Chuck 70 ‘Amarillo’ 170282C",
+            "DonGia": 170,
+            "KhuyenMai": 0,
+            "HinhAnh": ["sp17_1.png", "sp17_2.png", "sp17_3.png", "sp17_4.png", "sp17_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày nữ Converse Chuck Taylor All Star Platform Low 567855C",
+            "DonGia": 190,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp18_1.png", "sp18_2.png", "sp18_3.png", "sp18_4.png", "sp18_5.png"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Converse"
+        },
+        {
+            "TenGiay": "Giày Nike Air Jordan 1 Acclimate ‘Dusty Pink’ DC7723-500",
+            "DonGia": 320,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp19_1.png", "sp19_2.png", "sp19_3.png", "sp19_4.png", "sp19_5.png"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Air Jordan Series.01 ‘Dear Larry’ CV8129-100",
+            "DonGia": 260,
+            "KhuyenMai": 20,
+            "HinhAnh": ["sp20_1.png", "sp20_2.png", "sp20_3.png", "sp20_4.png", "sp20_5.png"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày bóng rổ nữ Jordan Why Not Zer0.4 PF GS ‘Upbringing’ DH0944-100",
+            "DonGia": 180,
+            "KhuyenMai": 50,
+            "HinhAnh": ["sp21_1.png", "sp21_2.jpg", "sp21_3.jpg", "sp21_4.jpg", "sp21_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Air Jordan 10 Retro ‘Seattle’ 2019 310805-137",
+            "DonGia": 100,
+            "KhuyenMai": 90,
+            "HinhAnh": ["sp22_1.png", "sp22_2.jpg", "sp22_3.jpg", "sp22_4.jpg", "sp22_5.jpg"],
+            "LoaiGiay": "Nam",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Wmns Air Jordan MA2 ‘Light Bone Sunset Pulse’ CW5992-003",
+            "DonGia": 800,
+            "KhuyenMai": 2,
+            "HinhAnh": ["sp23_1.jpg", "sp23_2.jpg", "sp23_3.jpg", "sp23_4.jpg", "sp23_5.jpg"],
+            "LoaiGiay": "Nữ",
+            "HangGiay": "Nike"
+        },
+        {
+            "TenGiay": "Giày Wmns Jordan Delta Breathe ‘Purple Brilliant Green’ DJ5200-109",
+            "DonGia": 720,
+            "KhuyenMai": 10,
+            "HinhAnh": ["sp24_1.png", "sp24_2.jpg", "sp24_3.jpg", "sp24_4.jpg", "sp24_5.jpg"],
+            "LoaiGiay": "Nam và Nữ",
+            "HangGiay": "Nike"
+        }
+    ],
+    "KhachHang": [{
+            "TaiKhoan": "pnmtriet",
+            "MatKhau": "123456",
+            "HoTen:": "Phạm Nguyễn Minh Triết",
+            "Email": "pnmtriet@gmail.com",
+            "SoDienThoai": "0393796227",
+            "DiaChiNhanHang": "1 Đinh Tiên Hoàng, Q.1, TP.HCM"
+        },
+        {
+            "TaiKhoan": "admin",
+            "MatKhau": "admin",
+            "HoTen:": "Quản trị",
+            "Email": "admin@gmail.com",
+            "SoDienThoai": "0986356423",
+            "DiaChiNhanHang": "10 Cộng Hoà, Q.Tân Bình, TP.HCM"
+        }
+    ],
+    "DanhGia": [{
+            "HoVaTen": "Minh Triết",
+            "Email": "pnmtriet@gmail.com",
+            "SoSao": 4,
+            "NhanXet": "Giày rất đẹp, rất phù hợp với độ tuổi của mình.",
+            "Hinh": "nam.jpg",
+            "NgayDanhGia": "16/03/2022"
+        },
+        {
+            "HoVaTen": "Thùy Dương",
+            "Email": "nntduong@gmail.com",
+            "SoSao": 4,
+            "NhanXet": "Mình vừa mua cho anh người yêu một đôi ưng bụng dễ sợ.",
+            "Hinh": "nu.jpg",
+            "NgayDanhGia": "17/03/2022"
+        }
+    ]
+
+}
